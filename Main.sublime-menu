@@ -1,0 +1,7 @@
+[{
+    "id": "project",
+    "children":
+    [
+        { "command": "generate_projects" }
+    ]
+}]
