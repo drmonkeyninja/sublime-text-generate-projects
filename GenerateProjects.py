@@ -1,6 +1,8 @@
 import sublime, sublime_plugin
 import os, json
 
+settings = sublime.load_settings('GenerateProjects.sublime-settings')
+
 class GenerateProjectsCommand(sublime_plugin.WindowCommand):
 
     def run(self):
