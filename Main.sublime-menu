@@ -1,7 +1,41 @@
-[{
-    "id": "project",
-    "children":
-    [
-        { "command": "generate_projects" }
-    ]
-}]
+[
+    {
+        "id": "project",
+        "children":
+        [
+            {"command": "generate_projects"}
+        ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Generate Projects",
+                        "children": [
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/GenerateProjects/GenerateProjects.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/GenerateProjects/GenerateProjects.sublime-settings"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
