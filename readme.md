@@ -17,6 +17,18 @@ The plugin will not work until these have been set.
 
 There is also an optional `blacklist` setting which takes an array of folders within `local_repositories_directory` that you want to exclude when generating project files.
 
+An example settings file for the plugin:-
+
+    {
+        "local_repositories_directory": "/Users/andy/Sites",
+        "sublime_project_directory": "/Users/andy/projects",
+        "blacklist": [
+            "tools"
+        ]
+    }
+
+This will generate project files in @/Users/andy/projects@ for all folders in @/Users/andy/Sites@ except the @tools@ folder.
+
 Usage
 -----
 
