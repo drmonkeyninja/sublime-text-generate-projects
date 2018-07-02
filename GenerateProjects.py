@@ -6,6 +6,7 @@ settings = sublime.load_settings('GenerateProjects.sublime-settings')
 class GenerateProjectsCommand(sublime_plugin.WindowCommand):
 
     def run(self):
+        """Generate project files"""
         path = settings.get('local_repositories_directory')
         for name in os.listdir(path):
             if os.path.isdir(os.path.join(path, name)) and not self.is_blacklisted(name):
