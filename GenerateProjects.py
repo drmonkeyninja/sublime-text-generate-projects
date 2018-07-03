@@ -8,6 +8,9 @@ class GenerateProjectsCommand(sublime_plugin.WindowCommand):
     def run(self):
         """Generate project files"""
         path = settings.get('local_repositories_directory')
+        project_settings_path = settings.get('sublime_project_directory')
+        if (not path or not project_settings_path):
+            raise Exception('The plugin settings have not been configured')
         for name in os.listdir(path):
             if os.path.isdir(os.path.join(path, name)) and not self.is_blacklisted(name):
                 self.generateProject(name)
