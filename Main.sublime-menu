@@ -29,7 +29,7 @@
                                 "command": "open_file",
                                 "args":
                                 {
-                                    "file": "${packages}/User/GenerateProjects/GenerateProjects.sublime-settings"
+                                    "file": "${packages}/User/GenerateProjects.sublime-settings"
                                 }
                             }
                         ]
