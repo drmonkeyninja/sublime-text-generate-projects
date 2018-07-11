@@ -27,7 +27,7 @@ An example settings file for the plugin:-
         ]
     }
 
-This will generate project files in `/Users/andy/projects` for all folders in `/Users/andy/Sites` except the @tools@ folder.
+This will generate project files in `/Users/andy/projects` for all folders in `/Users/andy/Sites` except the `tools` folder.
 
 Usage
 -----
