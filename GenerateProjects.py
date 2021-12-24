@@ -1,7 +1,9 @@
 import sublime, sublime_plugin
 import os, json
 
-settings = sublime.load_settings('GenerateProjects.sublime-settings')
+def plugin_loaded():
+    global settings
+    settings = sublime.load_settings('GenerateProjects.sublime-settings')
 
 class GenerateProjectsCommand(sublime_plugin.WindowCommand):
 
